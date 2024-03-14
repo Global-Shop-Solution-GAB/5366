@@ -1,0 +1,4 @@
+CREATE TABLE "GCG_5366_SeqMaint"(
+ "Seq" VARCHAR(6) NOT NULL ,
+ "Code" VARCHAR(10) NOT NULL ,
+ "Code_Desc" VARCHAR(20) NOT NULL );
