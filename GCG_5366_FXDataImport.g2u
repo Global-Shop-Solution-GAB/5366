@@ -1,0 +1,1622 @@
+Program.Sub.ScreenSU.Start
+Gui.SS_Form_File..create
+Gui.SS_Form_File..caption("File Selection")
+Gui.SS_Form_File..size(5365,1725)
+Gui.SS_Form_File..position(0,0)
+Gui.SS_Form_File..forecolor(0)
+Gui.SS_Form_File..BackColor(-2147483633)
+Gui.SS_Form_File..maxbutton(False)
+Gui.SS_Form_File..minbutton(False)
+Gui.SS_Form_File..mousepointer(0)
+Gui.SS_Form_File..sizeable(False)
+Gui.SS_Form_File..MinX(0)
+Gui.SS_Form_File..MinY(0)
+Gui.SS_Form_File..Event(UnLoad,SS_Form_File_UnLoad)
+Gui.SS_Form_File.lbl_txt_FileSelection.create(label,"File Name",True,1800,195,1,0,-240,True,0,Arial,8,-2147483633,0)
+Gui.SS_Form_File.lbl_txt_FileSelection.LabelStretch(True)
+Gui.SS_Form_File.txt_FileSelection.create(textbox,"",True,4500,300,1,105,330,True,0,Arial,8,16777215,1)
+Gui.SS_Form_File.txt_FileSelection.tabstop(True)
+Gui.SS_Form_File.txt_FileSelection.tabindex(1)
+Gui.SS_Form_File.cmd_txt_FileSelection.create(button)
+Gui.SS_Form_File.cmd_txt_FileSelection.Caption("^")
+Gui.SS_Form_File.cmd_txt_FileSelection.size(330,330)
+Gui.SS_Form_File.cmd_txt_FileSelection.position(4680,330)
+Gui.SS_Form_File.cmd_txt_FileSelection.tabstop(True)
+Gui.SS_Form_File.cmd_txt_FileSelection.tabindex(2)
+Gui.SS_Form_File.cmd_txt_FileSelection.Event(Click,cmd_txt_FileSelection_Click)
+Gui.SS_Form_File.cmdFileOK.Create(Button)
+Gui.SS_Form_File.cmdFileOK.Size(855,375)
+Gui.SS_Form_File.cmdFileOK.Position(105,705)
+Gui.SS_Form_File.cmdFileOK.Caption("OK")
+Gui.SS_Form_File.cmdFileOK.Event(Click,cmdFileOK_Click)
+Gui.SS_Form_File.lbl1.Create(Label,"CSV input file ",True,1935,255,0,90,105,True,0,"Arial",8,-2147483633,0)
+Gui.frmAcct..Create
+Gui.frmAcct..Caption("")
+Gui.frmAcct..Size(4740,3555)
+Gui.frmAcct..MinX(0)
+Gui.frmAcct..MinY(0)
+Gui.frmAcct..Position(0,0)
+Gui.frmAcct..BackColor(-2147483633)
+Gui.frmAcct..MaxButton(False)
+Gui.frmAcct..MinButton(False)
+Gui.frmAcct..MousePointer(0)
+Gui.frmAcct..Event(UnLoad,frmAcct_UnLoad)
+Gui.frmAcct.cmdAcctOk.Create(Button)
+Gui.frmAcct.cmdAcctOk.Size(1140,375)
+Gui.frmAcct.cmdAcctOk.Position(105,2400)
+Gui.frmAcct.cmdAcctOk.Caption("Ok")
+Gui.frmAcct.cmdAcctOk.Event(Click,cmdAcctOk_Click)
+Gui.frmAcct.optStandard.Create(Option)
+Gui.frmAcct.optStandard.Size(1575,255)
+Gui.frmAcct.optStandard.Position(105,285)
+Gui.frmAcct.optStandard.Caption("Standard")
+Gui.frmAcct.optStandard.Event(Click,optStandard_Click)
+Gui.frmAcct.optAccural.Create(Option)
+Gui.frmAcct.optAccural.Size(1575,255)
+Gui.frmAcct.optAccural.Position(105,675)
+Gui.frmAcct.optAccural.Caption("Accural")
+Gui.frmAcct.optAccural.Event(Click,optAccural_Click)
+Gui.frmAcct.optReversal.Create(Option)
+Gui.frmAcct.optReversal.Size(1575,255)
+Gui.frmAcct.optReversal.Position(105,1095)
+Gui.frmAcct.optReversal.Caption("Reversal")
+Gui.frmAcct.optReversal.Event(Click,optReversal_Click)
+Gui.frmAcct.txtAcctFile.Create(TextBox,"",True,3870,300,0,105,1875,False,0,"Arial",8,-2147483643,1)
+Gui.frmAcct.lbl1.Create(Label,"FileName",True,810,255,0,75,1650,True,0,"Arial",8,-2147483633,0)
+Gui.frmAcct.cmdAcctBrw.Create(Button)
+Gui.frmAcct.cmdAcctBrw.Enabled(False)
+Gui.frmAcct.cmdAcctBrw.Size(375,345)
+Gui.frmAcct.cmdAcctBrw.Position(4005,1845)
+Gui.frmAcct.cmdAcctBrw.Caption("^")
+Gui.frmAcct.cmdAcctBrw.Event(Click,cmdAcctBrw_Click)
+Gui.frmAcct.ddlReversalDT.Create(DropDownList)
+Gui.frmAcct.ddlReversalDT.Size(1470,330)
+Gui.frmAcct.ddlReversalDT.Position(1245,1080)
+Gui.frmAcct.ddlReversalDT.Visible(False)
+Gui.frmAcct.ddlReversalDT.Event(Click,ddlReversalDT_Click)
+Gui.frmAcct.lbl2.Create(Label,"Posting Date :",True,1230,255,0,1485,150,True,0,"Arial",8,-2147483633,0)
+Gui.frmAcct.dtpPostDate.Create(DatePicker)
+Gui.frmAcct.dtpPostDate.Size(1215,285)
+Gui.frmAcct.dtpPostDate.Position(2595,60)
+Gui.frmReversal..Create
+Gui.frmReversal..Caption("Reversal")
+Gui.frmReversal..Size(12750,10140)
+Gui.frmReversal..MinX(0)
+Gui.frmReversal..MinY(0)
+Gui.frmReversal..Position(0,0)
+Gui.frmReversal..BackColor(-2147483633)
+Gui.frmReversal..MaxButton(False)
+Gui.frmReversal..MinButton(False)
+Gui.frmReversal..MousePointer(0)
+Gui.frmReversal..Event(UnLoad,frmReversal_UnLoad)
+Gui.frmReversal.GsGridReverse.Create(GsGridControl)
+Gui.frmReversal.GsGridReverse.Size(12240,8895)
+Gui.frmReversal.GsGridReverse.Position(75,555)
+Gui.frmReversal.cmdReverse.Create(Button)
+Gui.frmReversal.cmdReverse.Size(1260,375)
+Gui.frmReversal.cmdReverse.Position(105,120)
+Gui.frmReversal.cmdReverse.Caption("Reverse")
+Gui.frmReversal.cmdReverse.Event(Click,cmdReverse_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.External.Include.Library("GCG_5366_ORDUPL_UPLOAD.lib")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+v.Global.sFileName.Declare
+v.Global.sFilePath.Declare
+
+
+
+'Order
+f.Intrinsic.Control.If(v.Caller.Switches,=,"O")
+	Gui.SS_Form_File..Show
+'Accural
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"A")
+	f.Intrinsic.Control.CallSub(Load_Reversal)
+	gui.frmAcct..Show
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Main.End
+
+Program.Sub.cmd_txt_FileSelection_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+Variable.Local.sFile.Declare(String)
+Variable.Local.sDir.Declare(String)
+
+F.Intrinsic.String.Build("{0}\Select File",V.Caller.FilesDir,V.Local.sDir)
+Function.Intrinsic.UI.ShowOpenFileDialog("","*.csv",V.Local.sDir,V.Local.sFile)
+Function.Intrinsic.Control.If(V.Local.sFile,<>,"***CANCEL***")
+	Gui.SS_Form_File.txt_FileSelection.Text(V.Local.sFile)
+Function.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmd_txt_FileSelection_Click.End
+
+Program.Sub.cmdFileOK_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.i.Declare(long)
+V.Local.iRows.Declare(long)
+V.Local.sRow.Declare(String)
+V.Local.iUB.Declare(long,-1)
+V.Local.sRet.Declare(String)
+V.Local.sTypes.Declare(String)
+V.Local.sFieldNames.Declare(String)
+V.Local.sData.Declare(String)
+V.Local.sTempRows.Declare(String)
+v.Local.sExcel.Declare
+V.Local.sSQL.declare
+V.Local.sOrder.Declare
+V.Local.sParams.Declare
+V.Local.sFile.Declare
+V.Local.bExists.Declare
+v.local.dtRet.Declare
+
+
+		f.Intrinsic.Control.BlockEvents
+		'Check to make sure they have a GSSParamccc.txt or GSSParam.txt file before moving forward.
+		F.Intrinsic.String.Build("{0}\GSSPARAM{1}.txt",V.Caller.FilesDir,V.Caller.CompanyCode,V.Local.sFile)
+		F.Intrinsic.File.Exists(V.Local.sFile,V.Local.bExists)
+		F.Intrinsic.Control.If(V.Local.bExists,=,False)
+			'We don't have a GSSParamccc.txt so lets see if we have a generic.
+			F.Intrinsic.String.Build("{0}\GSSPARAM.txt",V.Caller.FilesDir,V.Local.sFile)
+			F.Intrinsic.File.Exists(V.Local.sFile,V.Local.bExists)
+			F.Intrinsic.Control.If(V.Local.bExists,=,False)
+				'We don't have a generic so create it.
+				F.Intrinsic.String.Build("WEB ORDER DIRECTORY   = {0}\WEB_ORDERS{1}WEB ERROR DIRECTORY   = {0}\WEB_ORDERS\WEB_ERRORS{1}WEB CONVERTED DIR     = {0}\WEB_ORDERS\CONVERTED{1}WEB UPLOADED DIRECTORY= {0}\WEB_ORDERS\UPLOADED{1}EMAIL FROM ADDRESS    = {1}EMAIL TO ADDRESS      = ",V.Caller.FilesDir,V.Ambient.NewLine,V.Local.sRet)
+				F.Intrinsic.File.String2File(V.Local.sFile,V.Local.sRet)
+				'Now create the directories
+				F.Intrinsic.String.Build("{0}\WEB_ORDERS",V.Caller.FilesDir,V.Local.sFile)
+				F.Intrinsic.File.CreateDir(V.Local.sFile)
+				F.Intrinsic.String.Build("{0}\WEB_ORDERS\WEB_ERRORS",V.Caller.FilesDir,V.Local.sFile)
+				F.Intrinsic.File.CreateDir(V.Local.sFile)
+				F.Intrinsic.String.Build("{0}\WEB_ORDERS\CONVERTED",V.Caller.FilesDir,V.Local.sFile)
+				F.Intrinsic.File.CreateDir(V.Local.sFile)
+				F.Intrinsic.String.Build("{0}\WEB_ORDERS\UPLOADED",V.Caller.FilesDir,V.Local.sFile)
+				F.Intrinsic.File.CreateDir(V.Local.sFile)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+		
+	F.Intrinsic.UI.InvokeWaitDialog("Reading Spreadsheet")
+	V.Local.sRet.Set(V.Screen.SS_Form_File!txt_FileSelection.Text)
+	
+	
+	'f.Automation.MSExcel.ReadSpreadsheet(v.Screen.SS_Form_File!txt_FileSelection.text,v.Local.sExcel)
+	
+	V.Local.sFieldNames.Set("Customer*!*CustomerName*!*ShipToID*!*Name*!*TicketID*!*TicketDate*!*BillingStartDate*!*BillingEndDate*!*POAFE*!*Status*!*Office*!*PartNumber*!*ItemCode*!*Description*!*InputQty*!*Price*!*ExtAmt*!*OrderType*!*OrderDate")
+	V.Local.sTypes.Set("String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*string*!*String*!*String*!*String")
+
+	Function.Data.DataTable.CreateFromCSV("Import1",v.Screen.SS_Form_File!txt_FileSelection.text,V.Local.sFieldNames,V.Local.sTypes,True) 
+	
+	Function.Data.DataTable.DeleteRow("Import1",0)
+	f.Data.DataTable.AddColumn("Import1","CustExist","string")
+	f.Data.DataTable.AddColumn("Import1","ShipIDExist","string")
+	f.Data.DataTable.AddColumn("Import1","ProjectExist","string")
+	f.Data.DataTable.AddColumn("Import1","OrderExist","float") 'Order Total 0.001 means order not exist
+	f.Data.DataTable.AddColumn("Import1","FileOrderTot","float") 'sum of order Total from file
+	f.Data.DataTable.AddColumn("Import1","WOExist","string")
+	f.Data.DataTable.AddColumn("Import1","GSSOrdType","string")
+	f.Data.DataTable.AddColumn("Import1","DashRemarks","string")
+	f.Data.DataTable.AddColumn("Import1","DashRemarks1","string")
+	f.Data.DataTable.AddColumn("Import1","UserFldTemp","string")
+	f.Data.DataTable.AddColumn("Import1","CustNet","long")
+	f.Data.DataTable.AddColumn("Import1","DueDate","string")
+	
+	
+	'RPAD spaces
+	f.Data.DataTable.SetValueFormat("Import1",-1,"Customer","Customer","!@@@@@@")
+	
+'	Function.Data.DataTable.AddExpressionColumn("Import1", "ORD", "String", "'00' + Substring(TicketID, 3,6)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "ORD1", "String", "Substring(TicketID, 3,6)")
+	f.Data.DataTable.AddColumn("Import1","ORD","string")
+'	Function.Data.DataTable.SetValue("Import1",-1,"ORD1","ORD")
+	Function.Data.DataTable.SetValueFormat("Import1",-1,"ORD1","ORD","0000000")
+	
+	
+	'Combine Customer + Order 
+	'Function.Data.DataTable.AddExpressionColumn("Import1", "ORD", "String","TicketID")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "CustOrder", "String", "Customer+ORD")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "P1", "String", "Substring(Name, 5, 3)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "P2", "String", "Substring(Name, 9, 4)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "LOC", "String", "Substring(Office,2,2)")
+	
+	Function.Data.DataTable.AddExpressionColumn("Import1", "Project", "String", "P1+P2")
+	'Project is for Customer
+	Function.Data.DataTable.AddExpressionColumn("Import1", "ProjectCust", "String", "Customer+Project")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "WO", "String", "P2 + '-' + P1")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "Job", "String", "P2")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "suffix", "String", "P1")
+	
+	Function.Data.DataTable.SetValueFormat("Import1",-1,"Customer","Customer","000000")
+	Function.Data.DataTable.SetValueFormat("Import1",-1,"ShipToID","ShipToID","000000")
+	
+	Function.Data.DataTable.AddExpressionColumn("Import1", "CustShipToID", "String", "Customer+ShipToID")
+	
+	'if ShiptoID blank default shipID
+	F.Data.DataTable.AddExpressionColumn("Import1","ActShipToIDExist","string","IIF(ShipIDExist='N',IIF(ShipToID='','Y','N'),'Y')")
+	
+	Function.Data.DataTable.AddExpressionColumn("Import1", "C1", "String", "Substring(Description, 1, 30)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "C2", "String", "Substring(Description, 31, 30)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "C3", "String", "Substring(Description, 61, 30)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "C4", "String", "Substring(Description, 91, 30)")
+	
+	'split dictinonary data
+	Function.Data.DataTable.AddExpressionColumn("Import1", "USRFLD1", "String", "Substring(UserFldTemp,1,2)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "USRFLD2", "String", "Substring(UserFldTemp,3,12)")
+	
+	
+	'convert datatype
+	Function.Data.DataTable.AddExpressionColumn("Import1", "ExtAmt1", "float", "ExtAmt")
+	F.Data.DataTable.SetValueFormat("Import1",-1,"OrderDate","OrderDate","MM/DD/YYYY")
+	F.Data.DataTable.SetValueFormat("Import1",-1,"TicketDate","TicketDate","MM/DD/YYYY")
+	F.Data.DataTable.SetValueFormat("Import1",-1,"BillingStartDate","BillingStartDate","MM/DD/YYYY")
+	F.Data.DataTable.SetValueFormat("Import1",-1,"BillingEndDate","BillingEndDate","MM/DD/YYYY")
+	F.Data.DataTable.SetValueFormat("Import1",-1,"DueDate","DueDate","MM/DD/YYYY")
+	
+	F.Data.DataTable.AddExpressionColumn("Import1", "OT", "string", "isnull(OrderType,'')")
+	
+	F.Data.DataTable.AddExpressionColumn("Import1", "RTE02", "string", "IIF(OT<>'X',IIF(OrderExist<>0.001,IIF(FileOrderTot=OrderExist,'N','Y'),'Y'),IIF(GSSOrdType='X','N','Y'))")
+	'D for Delete
+	F.Data.DataTable.AddExpressionColumn("Import1", "RTE01", "string", "IIF(OrderExist<>0.001,IIF(RTE02='Y','D','N'),'N')")
+	
+	
+	'DueDate - add payment terms
+'	f.Data.DataTable.DateAdd("Supply","P2Start","w","P2Width","P3Start",62)
+
+
+'	F.Data.DataTable.AddExpressionColumn("Import1", "DATADD1DUE", "date", "[OrderDate] + [CustNet]")
+
+'	f.Data.DataTable.DateAdd("Import1","OrderDate","w","CustNet","DueDate",62)
+
+'	f.Data.DataTable.DateAdd("Import1","OrderDate","w","CustNet","DueDate",127)
+
+'	Function.Data.DataTable.AddExpressionColumn("Import1", "DueDate", "date", "CustNet + OrderDate")
+'	F.Data.DataTable.SetValueFormat("Import1",-1,"DueDate","DueDate","MM/DD/YYYY")
+	
+	f.Data.DataView.Create("Import1","DVImport",22,"Customer<>''","TicketID")
+	
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	
+	
+	f.Intrinsic.Control.CallSub(Customer_Exist)
+	
+'	f.Data.DataTable.DateAdd("Import1","OrderDate","w","CustNet","DueDate",127)
+	
+	f.Intrinsic.Control.If(v.Args.RetVal,=,"True")
+	'no data to upload
+		f.Intrinsic.Control.CallSub(Finalize_Upload)
+		f.Intrinsic.Control.CallSub(SS_Form_File_UnLoad)
+	f.Intrinsic.Control.EndIf
+'	
+	
+	'Get Ship Info 
+	F.Data.DataView.ToDataTableDistinct("Import1","DVImport","DTTemp","Customer*!*ShipToID*!*CustExist")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"ShipToID='' and CustExist = 'Y'","")
+	
+	
+	f.Intrinsic.Control.If(v.DataTable.DTTemp!DVTemp.rowcount,=,0)
+		
+		Function.Data.DataView.ToString("DTTemp","DVTemp","Customer","*!*",",",V.Local.sRet)
+		Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+		Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+		
+		F.Intrinsic.String.Build("SELECT customer,RTRIM(NAME_CUSTOMER_SHIP) AS NAME, RTRIM(ADDRESS1_SHIP) AS ADDRESS1, RTRIM(ADDRESS2_SHIP) AS ADDRESS2, RTRIM(CITY_SHIP) AS CITY, RTRIM(STATE_SHIP) AS STATE,RTRIM(CODE_ZIP_SHIP) AS ZIP, RTRIM(COUNTRY_SHIP) AS COUNTRY, RTRIM(ATTENTION_SHIP) AS ATTN FROM V_CUSTOMER_SHIPTO WHERE CUSTOMER IN ('{0}')",V.Local.sRet,V.Local.sSQL)
+		F.Data.datatable.CreateFromSQL("DTShip", "con",V.Local.sSQL)
+	
+		F.Data.Linq.Join("leftjoin","DataView","Import1","DVImport*!*L","datatable","DTShip*!*D","D.customer=L.customer","L.ActShipToIDExist*!*L.CustExist*!*L.ProjectExist*!*L.ORD*!*L.ShipToID*!*L.OT*!*L.OrderDate*!*L.C1*!*L.C2*!*L.C3*!*L.C4*!*L.POAFE*!*L.Price*!*L.CUSTOMER*!*L.PartNumber*!*L.Description*!*L.InputQty*!*D.NAME*!*D.ADDRESS1*!*D.ADDRESS2*!*D.CITY*!*D.STATE*!*D.ZIP*!*D.COUNTRY*!*D.ATTN*!*L.TicketDate*!*L.BillingStartDate*!*L.BillingEndDate*!*L.Project*!*L.WO*!*L.Job*!*L.Suffix*!*L.CustOrder*!*L.USRFLD1*!*L.USRFLD2*!*L.CustNet*!*L.DueDate*!*L.LOC","L.RTE02='Y'","","","ImportNew",True)
+	
+		F.Data.datatable.Close("DTShip")
+		
+	f.Intrinsic.Control.endif
+	
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+	
+	f.Intrinsic.Control.CallSub(Upload_Order)
+
+gui.SS_Form_File..Visible(false)
+f.ODBC.Connection!con.Close 
+
+
+F.Data.dataview.Close("Import1","DVImport")
+F.Data.datatable.Close("Import1")
+
+f.Intrinsic.Control.CallSub(SS_Form_File_UnLoad)
+
+f.Intrinsic.UI.CloseWaitDialog
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+f.Intrinsic.UI.CloseWaitDialog
+f.Intrinsic.Control.unBlockEvents
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+'	F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,21049)
+		Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdFileOK_Click.End
+
+Program.Sub.SS_Form_File_UnLoad.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'closing connection and ending program
+'F.ODBC.Connection!con.Close
+Function.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.SS_Form_File_UnLoad.End
+
+Program.Sub.Customer_Exist.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sRet.Declare
+V.Local.sSQL.Declare
+
+	
+	'Customer Exist
+	F.Data.DataView.ToDataTableDistinct("Import1","DVImport","DTTemp","Customer")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"","")
+	
+	Function.Data.DataView.ToString("DTTemp","DVTemp","Customer","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+	f.Intrinsic.String.Build("select Customer,'Y' from v_CUSTOMER_MASTER where Customer IN ('{0}')",V.Local.sRet,V.Local.sSQL)
+	F.Data.Dictionary.CreateFromSQL("dict", "con",V.Local.sSQL)
+	F.Data.Dictionary.SetDefaultReturn("dict", "N")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "Customer", "CustExist")
+	F.Data.Dictionary.Close("dict")
+
+
+	'Payment Terms
+	v.Local.sSQL.Set("select customer, payment_terms from v_customer_sales")
+'	f.Intrinsic.String.Build("select Customer,rtrim(ltrim(replace(terms_message,'NET',''))) from v_ar_terms join v_CUSTOMER_SALES on Payment_terms = terms_code where ass_sys = 'AR' and ASS_SUB_SYS = 'TRM' and ucase(terms_message) like '%NET%' and Customer IN ('{0}')",V.Local.sRet,V.Local.sSQL)
+	F.Data.Dictionary.CreateFromSQL("dict", "con",V.Local.sSQL)
+	F.Data.Dictionary.SetDefaultReturn("dict", "0")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "Customer", "CustNet")
+	F.Data.Dictionary.Close("dict")
+
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+	
+	'Project Exist
+	F.Data.DataView.ToDataTableDistinct("Import1","DVImport","DTTemp","ProjectCust")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"","")
+	Function.Data.DataView.ToString("DTTemp","DVTemp","ProjectCust","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+
+	f.Intrinsic.String.Build("select Customer+rtrim(PROJECT) as co,'Y' from v_PROJECT_MASTER where Customer + PROJECT IN ('{0}')",V.Local.sRet,V.Local.sSQL)
+	F.Data.Dictionary.CreateFromSQL("dict", "con",V.Local.sSQL)
+	F.Data.Dictionary.SetDefaultReturn("dict", "N")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "ProjectCust", "PROJECTExist")
+	F.Data.Dictionary.Close("dict")
+	
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+	
+
+
+	'ShipID Exist
+	F.Data.DataView.ToDataTableDistinct("Import1","DVImport","DTTemp","CustShipToID")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"","")
+	Function.Data.DataView.ToString("DTTemp","DVTemp","CustShipToID","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+
+	f.Intrinsic.String.Build("select Customer+rtrim(Ship_Seq) as co,'Y' as val,Ship_State+Ship_county as UserFld12 from v_OE_MULTI_SHIP where Customer + Ship_Seq IN ('{0}')",V.Local.sRet,V.Local.sSQL)
+	f.Data.DataTable.CreateFromSQL("DTShip","con",V.Local.sSQL)
+	
+	Function.Data.Dictionary.CreateFromDataTable("dict","DTShip","co","val")
+	F.Data.Dictionary.SetDefaultReturn("dict", "N")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "CustShipToID", "ShipIDExist")
+	F.Data.Dictionary.Close("dict")
+	
+	Function.Data.Dictionary.CreateFromDataTable("dict","DTShip","co","UserFld12")
+	F.Data.Dictionary.SetDefaultReturn("dict", "")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "CustShipToID", "UserFldTemp")
+	F.Data.Dictionary.Close("dict")
+	
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+	F.Data.datatable.Close("DTShip")
+	
+	'OrderType
+	F.Data.DataView.ToDataTableDistinct("Import1","DVImport","DTTemp","CustOrder")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"","")
+	Function.Data.DataView.ToString("DTTemp","DVTemp","CustOrder","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+
+	f.Intrinsic.String.Build("select Customer+rtrim(Order_No) ,Order_Type from v_shipment_Header where Customer+Order_No IN ('{0}') ",V.Local.sRet,V.Local.sSQL)
+	F.Data.Dictionary.CreateFromSQL("dict", "con",V.Local.sSQL)
+	F.Data.Dictionary.SetDefaultReturn("dict", "")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "CustOrder", "GSSOrdType")
+	F.Data.Dictionary.Close("dict")
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+	
+'	'SO Exist
+	f.Intrinsic.String.Build("select Customer+rtrim(Order_No) as co,sum(extension_order) from v_order_lines where Customer+Order_No IN ('{0}')  group by co",V.Local.sRet,V.Local.sSQL)
+	F.Data.Dictionary.CreateFromSQL("dict", "con",V.Local.sSQL)
+	F.Data.Dictionary.SetDefaultReturn("dict", "0.001")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "CustOrder", "ORDERExist")
+	F.Data.Dictionary.Close("dict")
+'	
+	F.Data.DataView.SetFilter("Import1","DVImport","CustExist='Y' and ActShipToIDExist='Y' and ProjectExist='Y' AND RTE02 = 'Y'")
+'	F.Data.DataView.SetFilter("Import1","DVImport","CustExist='Y'")
+	
+	f.Intrinsic.Control.If(v.DataView.Import1!DVImport.RowCount,=,0)
+	'no records to import exit
+		f.Intrinsic.Variable.AddRV("Retval","True")
+		F.Data.DataView.SetFilter("Import1","DVImport","")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	'reset filter
+	F.Data.DataView.SetFilter("Import1","DVImport","")
+
+	'Calculate orderTotal from Import File
+	f.Data.DataTable.Create("DTLINK",True)
+	f.Data.DataTable.AddColumn("DTLINK","Order","string")
+	
+
+	F.Data.Linq.Join("leftjoin","datatable","Import1*!*D","datatable","DTLINK*!*L","D.CustOrder=L.Order","D.CustOrder*!*sum(D.ExtAmt1) as TotalAmt","D.CustExist='Y' and D.ActShipToIDExist='Y' and D.ProjectExist='Y'","D.CustOrder","","ImportNew",False)
+'	F.Data.Linq.Join("leftjoin","datatable","Import1*!*D","datatable","DTLINK*!*L","D.CustOrder=L.Order","D.CustOrder*!*sum(D.ExtAmt1) as TotalAmt","D.CustExist='Y'","D.CustOrder","","ImportNew",False)
+
+	f.Data.DataView.Create("ImportNew","ImptDV",22,"","")
+
+	Function.Data.Dictionary.CreateFromDataView("dict","ImportNew","ImptDV","CustOrder","TotalAmt")
+	
+	F.Data.Dictionary.SetDefaultReturn("dict", "0")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "CustOrder", "FileOrderTot")
+	F.Data.Dictionary.Close("dict")
+	
+	F.Data.dataview.Close("ImportNew","ImptDV")
+	F.Data.datatable.Close("ImportNew")
+	F.Data.datatable.Close("DTLINK")
+
+
+	'Order Delete
+'	F.Data.DataView.ToDataTableDistinct("Import1","DVImport","DTTemp","CustOrder*!*RTE01")
+	F.Data.DataView.ToDataTableDistinct("Import1","DVImport","DTTemp","ORD*!*RTE01")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"RTE01='D'","")
+	f.Intrinsic.Control.If(v.DataView.DTTemp!DVTemp.rowcount,>,0)
+		Function.Data.DataView.ToString("DTTemp","DVTemp","ORD","*!*",",",V.Local.sRet)
+		Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+		Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+	
+'		f.Intrinsic.String.Build("delete from order_header where Customer+Order_No IN ('{0}') ",V.Local.sRet,V.Local.sSQL)
+		f.Intrinsic.String.Build("delete from order_header where Order_No IN ('{0}') ",V.Local.sRet,V.Local.sSQL)
+		f.ODBC.Connection!con.Execute(v.Local.sSql)
+		
+		'orderline delete not required order_header deletes both hearder & lines
+		
+		f.Intrinsic.String.Build("delete from ORDER_LN_TEXT where Order_Num IN ('{0}') ",V.Local.sRet,V.Local.sSQL)
+		f.ODBC.Connection!con.Execute(v.Local.sSql)
+		
+		f.Intrinsic.String.Build("delete from ORDER_BOOKING where Order_No IN ('{0}') ",V.Local.sRet,V.Local.sSQL)
+		f.ODBC.Connection!con.Execute(v.Local.sSql)
+	f.Intrinsic.Control.endif
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Customer_Exist.End
+
+Program.Sub.ErrorLog_Email.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+v.Local.iUsrId.Declare
+v.Local.sTemp.Declare
+v.Local.sTemp1.Declare
+v.Local.sSender.Declare
+v.Local.sRecipient.Declare
+v.Local.sEmailSubj.Declare
+v.local.spath.Declare
+
+
+
+'Getting all the stuff we need for sending an email
+f.Global.Security.GetUserId(v.Caller.User,v.Caller.CompanyCode,v.Local.iUsrId)
+f.Global.Security.GetFullName(v.Caller.User,v.Local.sTemp)
+f.Global.Security.GetUserEmail(v.Caller.User,v.Local.sTemp1)
+f.Intrinsic.String.Build("{0}*!*{1}",v.Local.sTemp1,v.Local.sTemp,v.Local.sSender)
+v.Local.sTemp.Set("")
+v.Local.sTemp1.Set("")
+f.Global.Security.GetGroupEmails("ARUPL",v.Local.sTemp)
+f.Intrinsic.Control.If(v.Local.sTemp.Trim,<>,"")
+	'split the emails
+	f.Intrinsic.String.Split(v.Local.sTemp,"*!*",v.Local.sTemp)
+	'put the emails back together
+	f.Intrinsic.String.Join(v.Local.sTemp,"@!@*!*",v.Local.sTemp)
+	'put *!* in the front of the string
+	f.Intrinsic.String.Build("*!*{0}",v.Local.sTemp,v.Local.sRecipient)
+	v.Local.sTemp.Set("")
+	
+	'Create_emailBody'
+	f.Intrinsic.Control.CallSub(Create_emailBody)
+'	f.Intrinsic.Control.If(v.Args.RetEmailBody.Trim,<>,"")
+'		f.Intrinsic.String.Build("FXData upload Error - {0}",v.screen.SS_Form_File!txt_FileSelection.Caption,v.Local.sEmailSubj)
+'		f.Global.Messaging.QueueMessage(v.Caller.CompanyCode,v.Local.iUsrID,"GCG_5366",v.Local.sEmailSubj,v.Local.sSender,v.Local.sRecipient,v.Args.RetEmailBody)
+'	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.Control.CallSub(Email_UploadSummary)
+	f.Intrinsic.String.Build("FXData upload summary - {0}",v.screen.SS_Form_File!txt_FileSelection.Caption,v.Local.sEmailSubj)
+	f.Intrinsic.String.build("{0}*!*{1}",v.Global.sFileName,v.Global.sFilePath,v.local.spath)
+	f.Global.Messaging.QueueMessage(v.Caller.CompanyCode,v.Local.iUsrID,"GCG_5366",v.Local.sEmailSubj,v.Local.sSender,v.Local.sRecipient,v.Args.RetSummary,,,,,,,,,,,v.local.spath,False)
+f.Intrinsic.Control.Else
+	f.Intrinsic.Control.CallSub(Create_emailBody)
+	f.Intrinsic.Control.CallSub(Email_UploadSummary)
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.ErrorLog_Email.End
+
+Program.Sub.Create_emailBody.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRetTxt.Declare(String)
+V.Local.sRet.Declare
+V.Local.sRet1.Declare
+
+
+
+f.Data.DataView.Create("Import1","DVTemp",22,"CustExist='N' and ActShipToIDExist='N' and ProjectExist='N'","")
+f.Intrinsic.Control.If(v.DataView.Import1!DVTemp.RowCount,>,0)
+	Function.Data.DataView.ToString("Import1","DVTemp","TicketID*!*Customer*!*ShipToID*!*Project","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,v.Ambient.NewLine,V.Local.sRet)
+	f.Intrinsic.String.Build("Customer, ShipID, Project not found {0}{1}",v.Ambient.NewLine,V.Local.sRet,V.Local.sRetTxt)
+	f.Data.DataView.SetValue("Import1","DVTemp",-1,"DashRemarks1","Customer, ShipID, Project not found")
+f.Intrinsic.Control.EndIf
+F.Data.dataview.Close("Import1","DVTemp")
+
+f.Data.DataView.Create("Import1","DVTemp",22,"CustExist='N' and ActShipToIDExist='Y' and ProjectExist='Y'","")
+f.Intrinsic.Control.If(v.DataView.Import1!DVTemp.RowCount,>,0)
+	Function.Data.DataView.ToString("Import1","DVTemp","TicketID*!*Customer","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,v.Ambient.NewLine,V.Local.sRet)
+	f.Intrinsic.Control.If(V.Local.sRetTxt,=,"")
+		V.Local.sRet1.Set("")
+	f.Intrinsic.Control.Else
+		V.Local.sRet1.Set("v.ambient.newline")
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.String.Build("{0}{2}{1}Customer not found {2}{3}",V.Local.sRetTxt,V.Local.sRet1,v.ambient.newline,V.Local.sRet,V.Local.sRetTxt)
+	f.Data.DataView.SetValue("Import1","DVTemp",-1,"DashRemarks1","Customer not found")
+f.Intrinsic.Control.EndIf
+F.Data.dataview.Close("Import1","DVTemp")
+
+f.Data.DataView.Create("Import1","DVTemp",22,"CustExist='Y' and ActShipToIDExist='N' and ProjectExist='N'","")
+f.Intrinsic.Control.If(v.DataView.Import1!DVTemp.RowCount,>,0)
+	Function.Data.DataView.ToString("Import1","DVTemp","TicketID*!*ShipToID*!*Project","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,v.Ambient.NewLine,V.Local.sRet)
+
+	f.Intrinsic.Control.If(V.Local.sRetTxt,=,"")
+		V.Local.sRet1.Set("")
+	f.Intrinsic.Control.Else
+			V.Local.sRet1.Set("v.ambient.newline")
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.String.Build("{0}{2}{1}ShipID, Project not found {2}{3}",V.Local.sRetTxt,V.Local.sRet1,v.ambient.newline,V.Local.sRet,V.Local.sRetTxt)
+	f.Data.DataView.SetValue("Import1","DVTemp",-1,"DashRemarks1","ShipID, Project not found")
+f.Intrinsic.Control.EndIf
+F.Data.dataview.Close("Import1","DVTemp")
+
+
+
+f.Data.DataView.Create("Import1","DVTemp",22,"CustExist='N' and ActShipToIDExist='Y' and ProjectExist='N'","")
+f.Intrinsic.Control.If(v.DataView.Import1!DVTemp.RowCount,>,0)
+	Function.Data.DataView.ToString("Import1","DVTemp","TicketID*!*Customer*!*Project","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,v.Ambient.NewLine,V.Local.sRet)
+
+	f.Intrinsic.Control.If(V.Local.sRetTxt,=,"")
+		V.Local.sRet1.Set("")
+	f.Intrinsic.Control.Else
+		V.Local.sRet1.Set("v.ambient.newline")
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.String.Build("{0}{2}{1}Customer, Project not found {2}{3}",V.Local.sRetTxt,V.Local.sRet1,v.ambient.newline,V.Local.sRet,V.Local.sRetTxt)
+	f.Data.DataView.SetValue("Import1","DVTemp",-1,"DashRemarks1","Customer, Project not found")
+f.Intrinsic.Control.EndIf
+F.Data.dataview.Close("Import1","DVTemp")
+
+f.Data.DataView.Create("Import1","DVTemp",22,"CustExist='N' and ActShipToIDExist='N' and ProjectExist='Y'","")
+f.Intrinsic.Control.If(v.DataView.Import1!DVTemp.RowCount,>,0)
+	Function.Data.DataView.ToString("Import1","DVTemp","TicketID*!*Customer*!*ShipToID","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,v.Ambient.NewLine,V.Local.sRet)
+
+	f.Intrinsic.Control.If(V.Local.sRetTxt,=,"")
+		V.Local.sRet1.Set("")
+	f.Intrinsic.Control.Else
+		V.Local.sRet1.Set("v.ambient.newline")
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.String.Build("{0}{2}{1}Customer, ShipID not found {2}{3}",V.Local.sRetTxt,V.Local.sRet1,v.ambient.newline,V.Local.sRet,V.Local.sRetTxt)
+	f.Data.DataView.SetValue("Import1","DVTemp",-1,"DashRemarks1","Customer, ShipID not found")
+f.Intrinsic.Control.EndIf
+F.Data.dataview.Close("Import1","DVTemp")
+
+f.Data.DataView.Create("Import1","DVTemp",22,"CustExist='Y' and ActShipToIDExist='N' and ProjectExist='Y'","")
+f.Intrinsic.Control.If(v.DataView.Import1!DVTemp.RowCount,>,0)
+	Function.Data.DataView.ToString("Import1","DVTemp","TicketID*!*ShipToID","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,v.Ambient.NewLine,V.Local.sRet)
+	f.Intrinsic.Control.If(V.Local.sRetTxt,=,"")
+		V.Local.sRet1.Set("")
+	f.Intrinsic.Control.Else
+		V.Local.sRet1.Set("v.ambient.newline")
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.String.Build("{0}{2}{1}ShipID not found {2}{3}",V.Local.sRetTxt,V.Local.sRet1,v.ambient.newline,V.Local.sRet,V.Local.sRetTxt)
+	f.Data.DataView.SetValue("Import1","DVTemp",-1,"DashRemarks1","ShipID not found")
+f.Intrinsic.Control.EndIf
+F.Data.dataview.Close("Import1","DVTemp")
+
+f.Data.DataView.Create("Import1","DVTemp",22,"CustExist='Y' and ActShipToIDExist='Y' and ProjectExist='N'","")
+f.Intrinsic.Control.If(v.DataView.Import1!DVTemp.RowCount,>,0)
+	Function.Data.DataView.ToString("Import1","DVTemp","TicketID*!*ShipToID","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,v.Ambient.NewLine,V.Local.sRet)
+	f.Intrinsic.Control.If(V.Local.sRetTxt,=,"")
+		V.Local.sRet1.Set("")
+	f.Intrinsic.Control.Else
+		V.Local.sRet1.Set("v.ambient.newline")
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.String.Build("{0}{2}{1}Project not found {2}{3}",V.Local.sRetTxt,V.Local.sRet1,v.ambient.newline,V.Local.sRet,V.Local.sRetTxt)
+	f.Data.DataView.SetValue("Import1","DVTemp",-1,"DashRemarks1","Project not found")
+f.Intrinsic.Control.EndIf
+F.Data.dataview.Close("Import1","DVTemp")
+
+f.Intrinsic.String.Replace(V.Local.sRetTxt,"*!*"," ",V.Local.sRetTxt)
+
+f.Intrinsic.Variable.AddRV("RetEmailBody",V.Local.sRetTxt)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Create_emailBody.End
+
+Program.Sub.Upload_Order.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRet.Declare
+v.local.dtRet.Declare
+v.Local.i.Declare
+
+
+f.Data.DataView.Create("ImportNew","ImportV","22","ActShipToIDExist = 'Y' and CustExist = 'Y' and ProjectExist = 'Y'","ORD")
+'f.Data.DataView.Create("ImportNew","ImportV","22","CustExist = 'Y'","")
+f.Intrinsic.Control.If(v.DataView.ImportNew!ImportV.rowcount,>,0)
+
+	f.Intrinsic.Control.For(v.Local.i,0,v.DataView.ImportNew!ImportV.rowcount--,1)
+		Function.Intrinsic.Date.DateAdd("D",V.DataView.ImportNew!ImportV(V.Local.i).CustNet!FieldVal,V.DataView.ImportNew!ImportV(V.Local.i).OrderDate!FieldVal,v.local.dtRet)
+		f.Data.Dataview.SetValue("ImportNew","ImportV",v.Local.i,"DueDate",v.local.dtRet)
+	f.Intrinsic.Control.Next(v.Local.i)
+	
+	F.Data.DataTable.SetValueFormat("ImportNew",-1,"DueDate","DueDate","MM/DD/YYYY")
+	
+	F.Data.DataView.ToString("ImportNew","ImportV","ORD*!*ShipToID*!*OT*!*OrderDate*!*DueDate*!*LOC*!*C1*!*C2*!*C3*!*C4*!*POAFE*!*Price*!*CUSTOMER*!*PartNumber*!*Description*!*InputQty*!*NAME*!*ADDRESS1*!*ADDRESS2*!*CITY*!*STATE*!*ZIP*!*COUNTRY*!*ATTN*!*TicketDate*!*BillingStartDate*!*BillingEndDate*!*Job*!*Suffix*!*USRFLD1*!*USRFLD2*!*Project","*!*","@!@",V.Local.sRet)
+	F.Intrinsic.Variable.LoadUDTFromString(V.uGlobal.uOrders,"Order_No*!*Ship_To_ID*!*Order_Type*!*Date_Order_Line*!*DateDue_Order*!*Location*!*Text_Line1*!*Text_Line2*!*Text_Line3*!*Text_Line4*!*Customer_PO*!*Quote_Price*!*Customer*!*Part*!*Description*!*Qty_Order*!*Ship_To_Name*!*SHIP_TO_ADDRESS1*!*SHIP_TO_ADDRESS2*!*SHIP_TO_CITY*!*SHIP_TO_STATE*!*SHIP_TO_ZIP*!*SHIP_TO_COUNTRY*!*SHIP_TO_ATTN*!*Header_User3*!*Header_USER4*!*Header_USER5*!*Job*!*Suffix*!*Header_User1*!*Header_User2*!*Project",V.Local.sRet,"@!@","*!*",False)
+
+	F.Intrinsic.UI.ChangeWaitStatus("Creating Order")
+	
+	F.Intrinsic.Control.CallSub(ORDUPLUpload)
+	
+	F.Intrinsic.UI.ChangeWaitStatus("Updating GSS")
+	F.Intrinsic.Control.CallSub(update_Order)
+	f.Intrinsic.Control.CallSub(Finalize_Upload)
+	
+	f.Intrinsic.UI.Msgbox("Upload completed")
+f.Intrinsic.Control.else
+	
+	f.Intrinsic.Control.CallSub(Finalize_Upload)
+	f.Intrinsic.UI.Msgbox("No Orders to Upload")
+f.Intrinsic.Control.endif
+f.Data.DataView.Close("ImportNew","ImportV")
+f.Data.datatable.Close("ImportNew")
+	
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Upload_Order.End
+
+Program.Sub.update_Order.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sParam.Declare
+V.Local.sRet.Declare
+V.Local.sSQL.Declare
+V.Local.sPhase.Declare
+
+	'update project
+	F.Data.DataView.ToDataTable("ImportNew","ImportV","DTTemp","Customer*!*ORD*!*Project")
+'	f.Data.DataTable.AddColumn("DTTemp","Record_Type","string")
+
+'	f.Data.DataTable.SetValue("DTTemp",-1,"record_type","A")
+'	F.Data.DataTable.SaveToDB("DTTemp", "con", "order_header","Customer*!*ORD*!*Record_Type",256,"Customer@!@Customer*!*ORD@!@Order_NO*!*Record_Type@!@Record_Type*!*Project@!@Project")
+'	
+'	F.Data.DataTable.SaveToDB("DTTemp", "con", "SHIPMENT_HEADER","Customer*!*ORD*!*Record_Type",256,"Customer@!@Customer*!*ORD@!@Order_NO*!*Record_Type@!@Record_Type*!*Project@!@Project")
+	
+	
+'	'update to L for lines
+''	f.Data.DataTable.AddColumn("DTTemp","Phase","string")
+''	
+''	f.Data.DataTable.SetValue("DTTemp",-1,"record_type","L")
+''	f.Data.DataTable.SetValue("DTTemp",-1,"Phase","PRA1")
+''	F.Data.DataTable.SaveToDB("DTTemp", "con", "order_Lines","Customer*!*ORD*!*Record_Type",256,"Customer@!@Customer*!*ORD@!@Order_NO*!*Record_Type@!@Record_Type*!*Phase@!@Phase")
+
+'	'update Order lines
+'	F.Data.DataView.ToDataTableDistinct("ImportNew","ImportV","DTORD","CustOrder")
+'	f.Data.DataView.Create("DTORD","DVORD",22,"","")
+'	f.Intrinsic.Control.If(v.DataView.DTORD!DVORD.rowcount,>,0)
+'		'Read Default Phase
+		Function.Global.General.ReadOption(400316,1,"","",V.Local.sPhase)
+'		
+'		Function.Data.DataView.ToString("DTORD","DVORD","CustOrder","*!*",",",V.Local.sRet)
+'		Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+'		Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+'	
+'		f.Intrinsic.String.Build("update ORDER_lines set phase = '{1}' where Customer+Order_No IN ('{0}') ",V.Local.sRet,V.Local.sPhase,V.Local.sSQL)
+'		f.ODBC.Connection!con.Execute(v.Local.sSql)
+'		
+'		f.Intrinsic.String.Build("update SHIPMENT_LINES set phase = '{1}' where Customer+Order_No IN ('{0}') ",V.Local.sRet,V.Local.sPhase,V.Local.sSQL)
+'		f.ODBC.Connection!con.Execute(v.Local.sSql)
+'	f.Intrinsic.Control.endif
+'	F.Data.dataview.Close("DTORD","DVORD")
+'	F.Data.datatable.Close("DTORD")
+	
+
+'F.Intrinsic.Control.Label("LBL1")
+
+	'Update WO
+	f.Data.DataTable.AddColumn("DTTemp","Phase","string")
+	f.Data.DataTable.SetValue("DTTemp",-1,"Phase",V.Local.sPhase)
+	F.Data.DataTable.SaveToDB("DTTemp", "con", "job_header","Job*!*Suffix",256,"Job@!@Job*!*suffix@!@suffix*!*Project@!@Project*!*Phase@!@Phase")
+
+	F.Data.datatable.Close("DTTemp")
+	
+	'Update XRef
+'	F.Global.General.CallWrapperSync(50,"PRJ804")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+'	f.Intrinsic.Control.If(V.Ambient.ErrorNumber,=,21047)
+'		f.Intrinsic.Control.GoTo("LBL1")
+'	f.Intrinsic.Control.EndIf
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.update_Order.End
+
+Program.Sub.cmdAcctBrw_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Variable.Local.sFile.Declare(String)
+Variable.Local.sDir.Declare(String)
+
+F.Intrinsic.String.Build("{0}\Select File",V.Caller.FilesDir,V.Local.sDir)
+Function.Intrinsic.UI.ShowOpenFileDialog("","csv|xls|xlsx",V.Local.sDir,V.Local.sFile)
+Function.Intrinsic.Control.If(V.Local.sFile,<>,"***CANCEL***")
+	gui.frmAcct.txtAcctFile.Text(V.Local.sFile)
+Function.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.cmdAcctBrw_Click.End
+
+Program.Sub.cmdAcctOk_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sFilter.Declare(String)
+
+f.Intrinsic.Control.If(v.Screen.frmAcct!optReversal.Value,=,True)
+		f.Intrinsic.Control.If(v.Screen.frmAcct!ddlReversalDT.Caption,=,"")
+			f.Intrinsic.UI.Msgbox("Please select date")
+			gui.frmAcct.ddlReversalDT.Setfocus
+			f.Intrinsic.Control.ExitSub
+		f.Intrinsic.Control.Else
+			gui.frmReversal..Visible(true)
+		f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.Elseif(v.Screen.frmAcct!optStandard.Value,=,True,"or",v.Screen.frmAcct!optAccural.Value,=,True)
+	f.Intrinsic.Control.If(v.Screen.frmAcct!txtAcctFile.text,<>,"")
+		f.Intrinsic.Control.BlockEvents
+		f.Intrinsic.Control.CallSub(Read_Payrollfile)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.Msgbox("Please select file to upload")
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	f.Intrinsic.Control.unBlockEvents
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.cmdAcctOk_Click.End
+
+Program.Sub.frmAcct_UnLoad.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+f.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.frmAcct_UnLoad.End
+
+Program.Sub.optStandard_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+f.Intrinsic.Control.If(v.Screen.frmAcct!optStandard.Value,=,true)
+	gui.frmAcct.txtAcctFile.Enabled(true)
+	gui.frmAcct.cmdAcctBrw.Enabled(true)
+	gui.frmAcct.ddlReversalDT.visible(false)
+	gui.frmAcct.txtAcctFile.SetFocus
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.optStandard_Click.End
+
+Program.Sub.optAccural_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+f.Intrinsic.Control.If(v.Screen.frmAcct!optAccural.Value,=,true)
+	gui.frmAcct.txtAcctFile.Enabled(true)
+	gui.frmAcct.cmdAcctBrw.Enabled(true)
+	gui.frmAcct.ddlReversalDT.visible(false)
+	gui.frmAcct.txtAcctFile.SetFocus
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.optAccural_Click.End
+
+Program.Sub.optReversal_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+f.Intrinsic.Control.If(v.Screen.frmAcct!optReversal.Value,=,true)
+	gui.frmAcct.txtAcctFile.Enabled(False)
+	gui.frmAcct.cmdAcctBrw.Enabled(false)
+	gui.frmAcct.ddlReversalDT.visible(true)
+	gui.frmAcct.ddlReversalDT.SetFocus
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.optReversal_Click.End
+
+Program.Sub.Email_UploadSummary.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sData.Declare
+v.local.lSuccessCnt.Declare
+v.local.lNotSuccessCnt.Declare
+v.Local.sHold.Declare
+V.Local.sFolder.Declare
+v.local.bRet.Declare
+V.Local.sFileName.Declare
+V.Local.sdate.Declare
+V.Local.sdate1.Declare
+v.Local.sFile.Declare
+v.Local.sHeader.Declare
+
+
+
+V.Local.sData.Set("FXData Upload Summary")
+f.Intrinsic.String.Build("{0}{1}=====================",V.Local.sData,v.Ambient.NewLine,V.Local.sData)
+
+
+' "$!$" @!@ 
+Function.Data.DataView.SetFilter("Import1","DVImport","")
+
+
+'Function.Intrinsic.Debug.InvokeDebugger
+
+'Function.Intrinsic.Debug.Stop
+
+
+f.Data.DataTable.AddExpressionColumn("Import1","Customer1","string","'''' + [Customer]")
+f.Data.DataTable.AddExpressionColumn("Import1","ShipToID1","string","'''' + [ShipToID]")
+
+Function.Data.DataView.ToString("Import1","DVImport","Customer1*!*CustomerName*!*ShipToID1*!*TicketID*!*Name*!*DashRemarks*!*DashRemarks1",",",v.Ambient.NewLine,v.Local.sHold)
+
+
+f.Intrinsic.String.Build("{0}\Custom\",v.Caller.GlobalDir,V.Local.sFolder)
+		
+f.Intrinsic.File.DirExists(V.Local.sFolder,v.local.bRet)
+f.Intrinsic.Control.If(v.local.bRet,=,False)
+    f.Intrinsic.File.CreateDir(V.Local.sFolder)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.String.Build("{0}\Custom\5366\",v.Caller.GlobalDir,V.Local.sFolder)
+f.Intrinsic.File.DirExists(V.Local.sFolder,v.local.bRet)
+f.Intrinsic.Control.If(v.local.bRet,=,False)
+    f.Intrinsic.File.CreateDir(V.Local.sFolder)
+f.Intrinsic.Control.EndIf
+
+Function.Intrinsic.String.Format (V.Ambient.Date,"YYYYDDMM",V.Local.sdate)
+Function.Intrinsic.String.Format (V.Ambient.Time,"HHNNSS",V.Local.sdate1)
+f.Intrinsic.String.Build("OrderLog_5366_{0}_{1}_{2}{3}.csv",v.Caller.Terminal,v.Caller.User,V.Local.sdate,V.Local.sdate1,V.Local.sFileName)
+f.Intrinsic.String.Build("{0}{1}",V.Local.sFolder,V.Local.sFileName,v.Local.sFile)
+
+v.Global.sFileName.set(V.Local.sFileName)
+v.Global.sFilePath.set(V.Local.sFolder)
+
+v.Local.sHeader.Set("Customer,Customer Name,ShipToID,TicketID,Name,DashRemarks,DashRemarks1")
+f.Intrinsic.String.Build("{0}{1}{2}",v.Local.sHeader,v.Ambient.NewLine,v.Local.sHold,v.Local.sHold)
+F.Intrinsic.File.String2File(V.Local.sFile,v.Local.sHold)
+
+
+Function.Data.DataView.SetFilter("Import1","DVImport"," RTE02='Y' and ActShipToIDExist='Y' and CustExist = 'Y' and ProjectExist='Y'")
+v.local.lSuccessCnt.Set(v.DataView.Import1!DVImport.RowCount)
+Function.Data.DataView.SetFilter("Import1","DVImport"," RTE02='N' or ActShipToIDExist='N' or CustExist = 'N' or ProjectExist='N'")
+v.local.lNotSuccessCnt.Set(v.DataView.Import1!DVImport.RowCount)
+
+f.Intrinsic.String.Build("{0}{1}{2}{3}",V.Local.sData,v.Ambient.NewLine,V.Ambient.Now,v.Ambient.NewLine,V.Local.sData)
+f.Intrinsic.String.Build("{0}Order Created  :{1}{2}",V.Local.sData,v.local.lSuccessCnt,v.Ambient.NewLine,V.Local.sData)
+f.Intrinsic.String.Build("{0}Order Failed   :{1}{2}",V.Local.sData,v.local.lNotSuccessCnt,v.Ambient.NewLine,V.Local.sData)
+f.Intrinsic.String.Build("{0}{1}OrderLog :{2}",V.Local.sData,v.Ambient.NewLine,V.Local.sFile,V.Local.sData)
+
+
+f.Intrinsic.Variable.AddRV("RetSummary",V.Local.sData)
+
+Function.Data.DataView.SetFilter("Import1","DVImport","")
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Email_UploadSummary.End
+
+Program.Sub.Finalize_Upload.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+
+F.Intrinsic.UI.ChangeWaitStatus("Generating upload results")
+
+Function.Data.DataView.SetFilter("Import1","DVImport"," RTE02='N'")
+f.Intrinsic.Control.if(v.DataView.Import1!DVImport.RowCount,>,0)
+	f.Data.DataView.SetValue("Import1","DVImport",-1,"DashRemarks","Failed to Upload")
+f.Intrinsic.Control.EndIf
+
+Function.Data.DataView.SetFilter("Import1","DVImport"," RTE02='Y' and ActShipToIDExist='Y' and CustExist = 'Y' and ProjectExist='Y'")
+f.Intrinsic.Control.if(v.DataView.Import1!DVImport.RowCount,>,0)
+	f.Data.DataView.SetValue("Import1","DVImport",-1,"DashRemarks","Success")
+f.Intrinsic.Control.EndIf
+
+'Function.Data.DataView.SetFilter("Import1","DVImport","OrderType='X' and RTE02='N'and (CustExist='Y' or ActShipToIDExist='Y' or ProjectExist='Y') ")
+'f.Intrinsic.Control.if(v.DataView.Import1!DVImport.RowCount,>,0)
+'	f.Data.DataView.SetValue("Import1","DVImport",-1,"DashRemarks","Failed - Invoice already Exist")
+'f.Intrinsic.Control.EndIf
+
+Function.Data.DataView.SetFilter("Import1","DVImport","OT='X' and GSSOrdType = 'X' ")
+f.Intrinsic.Control.if(v.DataView.Import1!DVImport.RowCount,>,0)
+	f.Data.DataView.SetValue("Import1","DVImport",-1,"DashRemarks","Failed - Invoice already Exist")
+f.Intrinsic.Control.EndIf
+
+Function.Data.DataView.SetFilter("Import1","DVImport","OrderExist<>0.001 and RTE02='N'and (CustExist='Y' or ActShipToIDExist='Y' or ProjectExist='Y')")
+f.Intrinsic.Control.if(v.DataView.Import1!DVImport.RowCount,>,0)
+	f.Data.DataView.SetValue("Import1","DVImport",-1,"DashRemarks","Order Already Exist")
+f.Intrinsic.Control.EndIf
+
+
+f.Intrinsic.Control.CallSub(ErrorLog_Email)
+
+'Function.Intrinsic.Debug.InvokeDebugger
+'Function.Intrinsic.Debug.Stop
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Finalize_Upload.End
+
+Program.Sub.Read_Payrollfile.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sFieldNames.Declare
+V.Local.sTypes.Declare
+V.Local.sRet.Declare
+V.Local.sSQL.Declare
+
+	F.Intrinsic.UI.InvokeWaitDialog("Reading Spreadsheet")
+	V.Local.sRet.Set(V.Screen.frmAcct!txtAcctFile.text)
+
+
+'	F.ODBC.Connection!con.OpenCompanyConnection(300)
+
+	V.Local.sFieldNames.Set("cdep'tcode*!*cdeptdesc*!*ctypecode*!*cacctcode*!*gloverride*!*cclacctcode*!*cacctdesc*!*namount*!*namttype*!*cacctrank*!*caccttype*!*eecode*!*firstname*!*lastname*!*Location_Code*!*Location_Desc*!*Job_Code*!*Job_Desc*!*Department_Code*!*Department_Desc*!*Indirect Direct_Code*!*Indirect Direct_Desc*!*reference*!*Corrected coding*!*Cost Rollup*!*Account*!*Job Loc*!*Job Dept*!*Account Name*!*Location Name*!*Class Name*!*TRANSACTIONDATE*!*PERIODENDING")
+	V.Local.sTypes.Set("string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string*!*string")
+
+	Function.Data.DataTable.CreateFromCSV("Import1",v.Screen.frmAcct!txtAcctFile.text,V.Local.sFieldNames,V.Local.sTypes,True) 
+	
+	Function.Data.DataTable.DeleteRow("Import1",0)
+	
+'	Function.Data.DataView.ToDataTableDistinct("Import1","ImportView","DTFile","JOB_DESC*!*CTYPECODE*!*NAMOUNT",true)
+	
+	f.Data.DataTable.AddColumn("Import1","SEQCODE","string")
+	f.Data.DataTable.AddColumn("Import1","Amount","string")
+	f.Data.DataTable.AddColumn("Import1","WOExist","string")
+	f.Data.DataTable.AddColumn("Import1","DashRemarks","string")
+	
+	Function.Data.DataTable.AddExpressionColumn("Import1", "P1", "String", "Substring(Job_Desc, 5, 3)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "P2", "String", "'00' + Substring(Job_Desc, 9, 4)")
+'	Function.Data.DataTable.AddExpressionColumn("Import1", "P2", "String", "Substring(Job_Desc, 9, 6)")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "Job", "String", "P2")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "suffix", "String", "P1")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "WOSEQ", "String", "P2+P1+SEQCODE")
+	Function.Data.DataTable.AddExpressionColumn("Import1", "WO", "String", "P2+P1")
+	
+	'	Function.Data.DataTable.SetValueFormat("Import1",-1,"P2","P2","000000")
+	
+	Function.Data.DataView.Create("Import1","ImportView",22,"Job_Desc<>''","")
+	'WO Exist
+	F.Data.DataView.ToDataTableDistinct("Import1","ImportView","DTTemp","WO")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"","")
+	Function.Data.DataView.ToString("DTTemp","DVTemp","WO","*!*",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+	f.Intrinsic.String.Build("select JOB+Suffix,'Y' from V_Job_header where JOB+Suffix IN ('{0}')",V.Local.sRet,V.Local.sSQL)
+	F.Data.Dictionary.CreateFromSQL("dict", "con",V.Local.sSQL)
+	F.Data.Dictionary.SetDefaultReturn("dict", "N")
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "WO", "WOExist")
+	F.Data.Dictionary.Close("dict")
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+	
+	
+	V.Local.sSQL.Set("select distinct Code_desc,Seq from GCG_5366_SeqMaint")
+	F.Data.Dictionary.CreateFromSQL("dict", "con",V.Local.sSQL)
+	
+	V.Local.sRet.Set(Variable.Dictionary.dict!OTHERS)
+	F.Data.Dictionary.SetDefaultReturn("dict",V.Local.sRet)
+	F.Data.DataTable.FillFromDictionary("Import1", "dict", "CTYPECODE", "SEQCODE")
+	F.Data.Dictionary.Close("dict")
+	
+	f.Data.DataTable.Create("DTLINK",True)
+	f.Data.DataTable.AddColumn("DTLINK","SEQCODE","string")
+	
+	F.Data.Linq.Join("leftjoin","datatable","Import1*!*D","datatable","DTLINK*!*L","D.SEQCODE=L.SEQCODE","D.WOSEQ*!*sum(D.namount) as TotalAmt","D.WOExist='Y'","D.WOSEQ","","ImportNew",False)
+	
+	F.Intrinsic.Control.If(V.DataTable.ImportNew.Exists,=,True)
+		f.Data.DataView.Create("ImportNew","ImptDV",22,"","")
+
+		Function.Data.Dictionary.CreateFromDataView("dict","ImportNew","ImptDV","WOSEQ","TotalAmt")
+		F.Data.Dictionary.SetDefaultReturn("dict", "0")
+		F.Data.DataTable.FillFromDictionary("Import1", "dict", "WOSEQ", "Amount")
+		F.Data.Dictionary.Close("dict")
+		
+		F.Data.dataview.Close("ImportNew","ImptDV")
+		F.Data.datatable.Close("ImportNew")
+		F.Data.datatable.Close("DTLINK")
+		
+		f.Intrinsic.Control.CallSub(Upload_JobDetail)
+	F.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.Control.CallSub(PayrollErrorLog_Email)
+	
+	f.Intrinsic.UI.Msgbox("Upload completed")
+
+	F.Data.dataview.Close("Import1","ImportView")
+	f.Data.DataTable.Close("Import1")
+	f.ODBC.Connection!con.Close 
+	f.Intrinsic.Control.CallSub(frmAcct_UnLoad)
+	
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.CallSub(frmAcct_UnLoad)
+Function.Intrinsic.Control.EndIf
+	
+Program.Sub.Read_Payrollfile.End
+
+Program.Sub.Upload_JobDetail.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+f.Data.DataView.SetFilter("Import1","ImportView","WOExist='Y'")
+f.Intrinsic.Control.If(v.DataView.Import1!ImportView.RowCount,>,0)
+	F.Data.DataView.ToDataTableDistinct("Import1","ImportView","DTSave","Job*!*suffix*!*SEQCODE*!*amount",True)
+'	f.Data.DataTable.AddColumn("DTSave","TranDate","date",v.Ambient.Date)
+	f.Data.DataTable.AddColumn("DTSave","TranDate","date",v.Screen.frmAcct!dtpPostDate.Value)
+	f.Intrinsic.Control.If(v.Screen.frmAcct!optAccural.Value,=,true)
+		f.Intrinsic.Control.If(v.DataTable.DTSave.RowCount,>,0)
+			F.Data.DataTable.SaveToDB("DTSave", "con", "GCG_5366_AccuralRev","Job*!*suffix*!*SEQCODE",256,"Job@!@Job*!*suffix@!@suffix*!*SEQCODE@!@SEQCODE*!*TranDate@!@TranDate*!*amount@!@amount")
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf
+
+	f.Intrinsic.Control.CallSub(Upload_JobDet_Final,"DTSave","DTSave","REVERSAL",1)
+	
+	f.Data.DataTable.Close("DTSave")
+Function.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Upload_JobDetail.End
+
+Program.Sub.Payroll_ErrorLog.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sData.Declare
+V.Local.sFolder.Declare
+v.local.bRet.Declare
+V.Local.sdate.Declare
+V.Local.sdate1.Declare
+V.Local.sFile.Declare
+V.Local.sFileName.Declare
+v.Local.sHold.Declare
+v.Local.sHeader.Declare
+
+f.Data.DataView.SetFilter("Import1","ImportView","")
+f.Data.DataView.SetValue("Import1","ImportView",-1,"DashRemarks","Success")
+
+f.Data.DataView.SetFilter("Import1","ImportView","WOExist='N'")
+f.Intrinsic.Control.If(v.DataView.Import1!ImportView.RowCount,>,0)
+	f.Data.DataView.SetValue("Import1","ImportView",-1,"DashRemarks","Work order not found")
+f.Intrinsic.Control.EndIf
+
+V.Local.sData.Set("Payroll Upload Summary")
+f.Intrinsic.String.Build("{0}{1}=====================",V.Local.sData,v.Ambient.NewLine,V.Local.sData)
+
+Function.Data.DataView.SetFilter("Import1","ImportView","")
+
+Function.Data.DataView.ToString("Import1","ImportView","ctypecode*!*Job_Desc*!*DashRemarks",",",v.Ambient.NewLine,v.Local.sHold)
+f.Intrinsic.String.Build("{0}\Custom\",v.Caller.GlobalDir,V.Local.sFolder)
+		
+f.Intrinsic.File.DirExists(V.Local.sFolder,v.local.bRet)
+f.Intrinsic.Control.If(v.local.bRet,=,False)
+    f.Intrinsic.File.CreateDir(V.Local.sFolder)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.String.Build("{0}\Custom\5366\",v.Caller.GlobalDir,V.Local.sFolder)
+f.Intrinsic.File.DirExists(V.Local.sFolder,v.local.bRet)
+f.Intrinsic.Control.If(v.local.bRet,=,False)
+    f.Intrinsic.File.CreateDir(V.Local.sFolder)
+f.Intrinsic.Control.EndIf
+
+Function.Intrinsic.String.Format (V.Ambient.Date,"YYYYDDMM",V.Local.sdate)
+Function.Intrinsic.String.Format (V.Ambient.Time,"HHNNSS",V.Local.sdate1)
+f.Intrinsic.String.Build("PayrollLog_5366_{0}_{1}_{2}{3}.csv",v.Caller.Terminal,v.Caller.User,V.Local.sdate,V.Local.sdate1,V.Local.sFileName)
+f.Intrinsic.String.Build("{0}{1}",V.Local.sFolder,V.Local.sFileName,v.Local.sFile)
+
+f.Intrinsic.String.Build("{0}{1}{2}{3}",V.Local.sData,v.Ambient.NewLine,V.Ambient.Now,v.Ambient.NewLine,V.Local.sData)
+f.Intrinsic.String.Build("{0}{1}PayrollLog :{2}",V.Local.sData,v.Ambient.NewLine,V.Local.sFile,V.Local.sData)
+
+v.Global.sFileName.set(V.Local.sFileName)
+v.Global.sFilePath.set(V.Local.sFolder)
+
+v.Local.sHeader.Set("ctypecode,Job_Desc,DashRemarks")
+f.Intrinsic.String.Build("{0}{1}{2}",v.Local.sHeader,v.Ambient.NewLine,v.Local.sHold,v.Local.sHold)
+
+F.Intrinsic.File.String2File(V.Local.sFile,v.Local.sHold)
+
+f.Intrinsic.Variable.AddRV("RetSummary",V.Local.sData)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Payroll_ErrorLog.End
+
+Program.Sub.PayrollErrorLog_Email.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+v.Local.iUsrId.Declare
+v.Local.sTemp.Declare
+v.Local.sTemp1.Declare
+v.Local.sSender.Declare
+v.Local.sRecipient.Declare
+v.Local.sEmailSubj.Declare
+v.local.spath.Declare
+
+F.Intrinsic.UI.ChangeWaitStatus("Creating Summary")
+
+'Getting all the stuff we need for sending an email
+f.Global.Security.GetUserId(v.Caller.User,v.Caller.CompanyCode,v.Local.iUsrId)
+f.Global.Security.GetFullName(v.Caller.User,v.Local.sTemp)
+f.Global.Security.GetUserEmail(v.Caller.User,v.Local.sTemp1)
+f.Intrinsic.String.Build("{0}*!*{1}",v.Local.sTemp1,v.Local.sTemp,v.Local.sSender)
+v.Local.sTemp.Set("")
+v.Local.sTemp1.Set("")
+f.Global.Security.GetGroupEmails("ARUPL",v.Local.sTemp)
+f.Intrinsic.Control.If(v.Local.sTemp.Trim,<>,"")
+	'split the emails
+	f.Intrinsic.String.Split(v.Local.sTemp,"*!*",v.Local.sTemp)
+	'put the emails back together
+	f.Intrinsic.String.Join(v.Local.sTemp,"@!@*!*",v.Local.sTemp)
+	'put *!* in the front of the string
+	f.Intrinsic.String.Build("*!*{0}",v.Local.sTemp,v.Local.sRecipient)
+	v.Local.sTemp.Set("")
+	
+	f.Intrinsic.Control.CallSub(Payroll_ErrorLog)
+	f.Intrinsic.String.Build("Payroll upload summary - {0}",v.screen.frmAcct!txtAcctFile.text,v.Local.sEmailSubj)
+	f.Intrinsic.String.build("{0}*!*{1}",v.Global.sFileName,v.Global.sFilePath,v.local.spath)
+	f.Global.Messaging.QueueMessage(v.Caller.CompanyCode,v.Local.iUsrID,"GCG_5366",v.Local.sEmailSubj,v.Local.sSender,v.Local.sRecipient,v.Args.RetSummary,,,,,,,,,,,v.local.spath,False)
+f.Intrinsic.Control.Else
+	f.Intrinsic.Control.CallSub(Payroll_ErrorLog)
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.PayrollErrorLog_Email.End
+
+Program.Sub.cmdReverse_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRet.Declare
+V.Local.dRet.Declare(date)
+V.Local.sSQL.Declare
+
+f.Intrinsic.Control.If(v.DataTable.DTReversal.RowCount,>,0)
+f.Intrinsic.Control.BlockEvents
+F.Intrinsic.UI.InvokeWaitDialog("Processing")
+	Function.Data.DataView.ToDataTable("DTReversal","DVReversal","DTSave",true)
+	f.Intrinsic.Control.CallSub(Upload_JobDet_Final,"DTSave","DTSave","REVERSAL",-1)
+	
+	F.Data.DataView.ToDataTableDistinct("DTReversal","DVReversal","DTTemp","JOB*!*Suffix")
+	f.Data.DataView.Create("DTTemp","DVTemp",22,"","")
+	
+	Function.Data.DataView.ToString("DTTemp","DVTemp","JOB*!*Suffix","",",",V.Local.sRet)
+	Function.Intrinsic.String.SPLIT(V.Local.sRet,",",V.Local.sRet)
+	Function.Intrinsic.String.Join(V.Local.sRet,"','",V.Local.sRet)
+
+	
+	V.Local.dRet.Set(v.Screen.frmAcct!ddlReversalDT.value)
+	f.Intrinsic.String.Build("delete from GCG_5366_AccuralRev where JOB+Suffix IN ('{0}') and TranDate = '{1}'",V.Local.sRet,V.Local.dRet.PervasiveDate,V.Local.sSQL)
+	f.ODBC.Connection!con.Execute(V.Local.sSQL)
+	
+	F.Data.dataview.Close("DTTemp","DVTemp")
+	F.Data.datatable.Close("DTTemp")
+	
+	f.Intrinsic.UI.Msgbox("Reversal completed successfully")
+	f.Intrinsic.Control.CallSub(frmAcct_UnLoad)
+f.Intrinsic.Control.endif
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	f.Intrinsic.Control.unBlockEvents
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.cmdReverse_Click.End
+
+Program.Sub.Load_Reversal.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+v.Local.iTotClmn.Declare
+v.Local.stitle.Declare
+v.Local.i.Declare
+V.Local.sFilter.Declare
+
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	
+	f.Data.DataTable.CreateFromSQL("DTReversal","con","select Job,suffix,SEQCODE,TranDate,amount from GCG_5366_AccuralRev",true)
+	'load nodata in GRID
+	f.Intrinsic.String.Build("TranDate='{0}'","01/01/1900",V.Local.sFilter)
+	f.Data.DataView.Create("DTReversal","DVReversal",22,V.Local.sFilter,"")
+	
+	f.Data.DataTable.CreateFromSQL("DTReversalDICT","con","select distinct TranDate from GCG_5366_AccuralRev")
+	gui.frmAcct.ddlReversalDT.additems("datatable","DTReversalDICT","TranDate","TranDate")
+	f.Data.DataTable.Close("DTReversalDICT")
+
+	gui.frmReversal.GsGridReverse.AddGridViewFromDataView("GridViewTo","DTReversal","DVReversal")
+
+	gui.frmReversal.GsGridReverse.GetColumnCount("GridViewTo",v.Local.iTotClmn)
+	f.Intrinsic.Math.Sub(v.Local.iTotClmn,1,v.Local.iTotClmn)
+	f.Intrinsic.Control.For(v.Local.i,0,v.Local.iTotClmn,1)
+		gui.frmReversal.GsGridReverse.GetColumnNamebyIndex("GridViewTo",v.Local.i,v.Local.stitle)
+		gui.frmReversal.GsGridReverse.SetColumnProperty("GridViewTo",v.Local.stitle,"AllowEdit",False)
+		gui.frmReversal.GsGridReverse.SetColumnProperty("GridViewTo",v.Local.stitle,"ReadOnly",True)
+	
+		gui.frmReversal.GsGridReverse.SetColumnProperty("GridViewTo",v.Local.stitle,"HeaderFontBold","True")
+		gui.frmReversal.GsGridReverse.SetColumnProperty("GridViewTo",v.Local.stitle,"HeaderBackColor","#7FFF00")
+	f.Intrinsic.Control.Next(v.Local.i)
+
+	gui.frmReversal.GsGridReverse.SetGridviewProperty("GridViewTo","OptionsSelectionEnableAppearanceFocusedRow",False)
+	
+	gui.frmReversal.GsGridReverse.SetColumnProperty("GridViewTo", "TranDate", "DisplayCustomDatetime", "d")
+
+	gui.frmReversal.GsGridReverse.MainView("GridViewTo")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Load_Reversal.End
+
+Program.Sub.ddlReversalDT_Click.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sFilter.Declare(String)
+
+
+f.Intrinsic.String.Build("TranDate='{0}'",v.Screen.frmAcct!ddlReversalDT.Value,V.Local.sFilter)
+f.Data.DataView.SetFilter("DTReversal","DVReversal",V.Local.sFilter)
+
+gui.frmReversal..Visible(true)
+gui.frmReversal..Show
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+	
+Program.Sub.ddlReversalDT_Click.End
+
+Program.Sub.Upload_JobDet_Final.Start
+F.Intrinsic.Control.SetErrorHandler("Sub_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+v.Local.famt.Declare
+V.Local.sFileData.Declare
+V.Local.sTemp.Declare
+V.Local.sFile.Declare
+V.Local.sRet.Declare
+v.Local.i.Declare
+
+	f.Intrinsic.Control.For(v.Local.i,0,v.DataTable.[v.Args.DTSave].RowCount--)
+		' Job (1-6)
+		F.Intrinsic.String.RPad(v.DataTable.[v.Args.DTSave](v.Local.i).Job!FieldVal," ",6,V.Local.sFileData)
+		' Suffix (7-9)
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData,v.DataTable.[v.Args.DTSave](v.Local.i).suffix!FieldVal,V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",9,V.Local.sFileData)
+		' Seq (10-15)
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData,v.DataTable.[v.Args.DTSave](v.Local.i).SEQCODE!FieldVal,V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",15,V.Local.sFileData)
+		' Date (16-21) - selected date as yymmdd
+		F.Intrinsic.String.Format(v.DataTable.[v.Args.DTSave](v.Local.i).TranDate!FieldVal,"YYMMDD",V.Local.sTemp)
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData,V.Local.sTemp,V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",21,V.Local.sFileData)
+		' Employee Name (22-51) 
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData," ",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",51,V.Local.sFileData)
+		'Description (52-81)
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData," ",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",101,V.Local.sFileData)
+		' Emp Dept
+		F.Intrinsic.String.Build(V.Local.sFileData," ",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",141,V.Local.sFileData)
+		' Employee Number (142-146)
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData,"99999",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",150,V.Local.sFileData)
+		' Part (151-170) 
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData," ",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",170,V.Local.sFileData)
+		' Hours
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData,"0.0000",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",219,V.Local.sFileData)
+		
+		'Labor Dollars
+		f.Intrinsic.Math.Mult(v.Args.REVERSAL,v.DataTable.[v.Args.DTSave](v.Local.i).amount!FieldVal,v.Local.famt)
+		F.Intrinsic.String.Split(v.Local.famt,V.Ambient.NewLine,V.Local.sTemp)
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData,V.Local.sTemp(0).Format*#0.0000,V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",235,V.Local.sFileData)
+		' OH Dollars (236-251) 
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData," ",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",286,V.Local.sFileData)
+		' LMO
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData,"L",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",541,V.Local.sFileData)
+		'Material Unit Cost (542-560)
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sFileData," ",V.Local.sFileData)
+		F.Intrinsic.String.RPad(V.Local.sFileData," ",655,V.Local.sFileData)
+
+	
+		F.Intrinsic.Control.If(V.Local.sFile.Length,>,0)
+			F.Intrinsic.String.Build("{0}{1}{2}",V.Local.sFile,V.Ambient.NewLine,V.Local.sFileData,V.Local.sFile)
+		F.Intrinsic.Control.Else
+			V.Local.sFile.Set(V.Local.sFileData)
+		F.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.Next(v.Local.i)
+
+	F.Intrinsic.Control.If(V.Local.sFile.Length,>,0)
+		F.Intrinsic.UI.ChangeWaitStatus("Uploading Job Detail Records.....")
+		F.Intrinsic.String.Build("{0}\JOBDETL.TXT",V.Caller.FilesDir,V.Local.sRet)
+		F.Intrinsic.File.String2File(V.Local.sRet,V.Local.sFile)
+		F.Global.General.CallWrapperSync(50,"UPLJOBDT/U")
+		
+		'run JB9000(ALL JOBS) or JB9000A(specific Job range)
+		'this will look at detail and update the summmarized cost on job header
+	
+		F.Global.General.CallWrapperSync(50,"JB9000")
+		
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Sub_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: Project",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Upload_JobDet_Final.End
+
+Program.Sub.frmReversal_UnLoad.Start
+	gui.frmReversal..Visible(false)
+Program.Sub.frmReversal_UnLoad.End
+
+Program.Sub.Comments.Start
+${$0$}$GCG_5366_FXDataImport.g2u$}$SUPERVSR$}$12/1/2018 11:25:07 PM$}$True
+Program.Sub.Comments.End
